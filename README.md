@@ -5,3 +5,5 @@ Integer code provided in datasheet does not have adequate resolution for variome
 
 The pressure to altitude conversion is done via look up tables followed by linear interpolation.  This is useful if using an 8bit/16bit processor and the processing time is critical. Accuracy can always be improved by decreasing the lookup table interval (more entries), but at the cost of code space.
 
+Code assumes spi bit-bang interface to the MS5611.
+
